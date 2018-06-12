@@ -5,6 +5,7 @@ import App from './app'
 import store from './store'
 import { Provider } from 'react-redux'
 import { HashRouter, Route } from 'react-router-dom'
+//import "./help"
 
 ReactDOM.render((
   <Provider store={store}>

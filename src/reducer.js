@@ -1,10 +1,18 @@
-export default function reducer(state, action) {
-  switch(action.type) {
-    case "LISTING_REQUEST":
-    case "LISTING_RESPONSE": 
+export default function reducer(state = {
+  catsLoaded: false,
+}, action) {
+  switch (action.type) {
+    case "GET_CATS_LISTING":
       return {
         ...state
       }
+    case "GOT_CATS_LISTING":
+      return {
+        ...state,
+        catsLoaded: true,
+        data: action.data,
+      }
+    default:
+      return state
   }
-  return state
 }
