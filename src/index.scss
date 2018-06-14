@@ -3,10 +3,73 @@
 body {
   margin: 20px;
   padding: 0;
+  color: rgb(231, 231, 231);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('/asset/Kins1.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 20px;
+  // grid-auto-flow: column;
+  // height: 600px;
+  // border: 1px solid rgb(138, 138, 138);
+}
+
+.header {
+  margin: 0; 
+  padding: 0; 
+  font-size: 16px;
+}
+
+.header-text {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #app {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 20px;
+  // grid-auto-flow: column;
+  height: 600px;
+  border: 1px solid rgb(138, 138, 138);
+}
+
+.navigation {
+  font-size: 20px;
+}
+
+.home,
+.cats {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.home:hover,
+.cats:hover {
+  color: rgb(248, 248, 248);
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(248, 248, 248);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1rem;
+  text-transform: lowercase;
 }

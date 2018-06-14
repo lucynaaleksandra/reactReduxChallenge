@@ -7,16 +7,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <header>
-          <h1>Cats App</h1>
+      <div id="root">
+        <header className="header">
+          <h1 className="header-text">Awesome Cat App</h1>
+          <nav className="navigation">
+            <Link to="/" className="home">Home</Link>
+            <Link to="/cats" className="cats">Cats</Link>
+            <Route path="/" component={Home} exact={true} />
+            <Route path="/cats" component={Cats} />
+          </nav>
         </header>
 
-        <Link to="/">Home</Link>
-        <Link to="/cats" >Cats</Link> 
-        <Route path="/" component={Home} exact={true} />
-        <Route path="/cats" component={Cats} />
-      
       </div>
     )
   }
