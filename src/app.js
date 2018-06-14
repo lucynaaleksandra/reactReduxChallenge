@@ -9,6 +9,7 @@ class App extends React.Component {
     return (
       <div id="root">
         <header className="header">
+        <img src="./asset/cat2offWHT2.png" alt="cat" className="cat-img"/>
           <h1 className="header-text">Awesome Cat App</h1>
           <nav className="navigation">
             <Link to="/" className="home">Home</Link>

@@ -27,7 +27,7 @@ class Cats extends React.Component {
     }
 
     let catsData = data.map(cat => {
-      let styles = { "backgroundImage": `url(${cat.photos[0]})` }
+      let styles = { backgroundImage: `url(${cat.photos})` }
       return (
         <div key={cat.id} className="cats-data">
           <div className="cats-photo" style={styles} />
