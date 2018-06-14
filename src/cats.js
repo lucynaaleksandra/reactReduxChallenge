@@ -44,7 +44,7 @@ class Cats extends React.Component {
     return (
       <div key="cats-data" className="cats-data">
         {/* <h2>Hello kins!</h2> */}
-        <div>
+        <div className="catsData">
           {catsData}
         </div>
       </div >

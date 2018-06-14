@@ -10,13 +10,6 @@ body {
   background-size: cover; 
   background-position: center; 
   height: 100vh; 
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-gap: 20px;
-  // grid-auto-flow: column;
-  // height: 600px;
-  // border: 1px solid rgb(138, 138, 138);
 }
 
 .header {
@@ -31,17 +24,25 @@ body {
   text-transform: uppercase;
 }
 
-#app {
+// #app {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+//   grid-gap: 20px;
+//   // grid-auto-flow: column;
+//   height: 600px;
+//   border: 1px solid rgb(138, 138, 138);
+// }
+
+.catsData {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 20px;
-  // grid-auto-flow: column;
   height: 600px;
-  border: 1px solid rgb(138, 138, 138);
 }
 
 .navigation {
   font-size: 20px;
+  
 }
 
 .home,
@@ -69,7 +70,14 @@ h3 {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-weight: 300;
+}
+
 p {
   font-size: 1rem;
-  text-transform: lowercase;
+}
+
+hr {
+  margin-top: 40px;
 }

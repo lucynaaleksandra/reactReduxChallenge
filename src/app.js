@@ -13,11 +13,11 @@ class App extends React.Component {
           <nav className="navigation">
             <Link to="/" className="home">Home</Link>
             <Link to="/cats" className="cats">Cats</Link>
+            <hr/>
             <Route path="/" component={Home} exact={true} />
             <Route path="/cats" component={Cats} />
           </nav>
         </header>
-
       </div>
     )
   }
