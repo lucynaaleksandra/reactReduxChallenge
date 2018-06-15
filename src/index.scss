@@ -8,7 +8,9 @@ body {
   font-weight: 300;
   background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('/asset/Kins2.jpg');
   background-size: cover; 
+  background-repeat: no-repeat;
   background-position: center; 
+  background-attachment: fixed;
   height: 100vh; 
 }
 
@@ -24,37 +26,35 @@ body {
   width: 10%;
 }
 
-img {
-  color: white;  
-}
-
 .header-text {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 300;
   text-transform: uppercase;
-  padding-top: 70px;
+  word-spacing: 3px; 
+  letter-spacing: 10px; 
+  padding-top: 90px;
   margin-bottom: 0;
 }
 
-// #app {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-//   grid-gap: 20px;
-//   // grid-auto-flow: column;
-//   height: 600px;
-//   border: 1px solid rgb(138, 138, 138);
-// }
-
 .catsData {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-gap: 20px;
+  float: left;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-gap: 10px;
   height: 600px;
+  // width: 10%;
+  // outline: none;
+
+  & h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 .navigation {
-  font-size: 20px;
-  
+  font-size: 25px;
 }
 
 .home {
@@ -69,7 +69,6 @@ img {
   margin-right: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  // border-bottom: 1px solid rgb(243, 243, 243);
 }
 
 .home:hover,
@@ -81,26 +80,17 @@ img {
   border-bottom: 1px solid rgb(248, 248, 248);
 }
 
-h3 {
-  font-size: 1.3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  letter-spacing: 5px;
-  word-spacing: 3px;
-  text-align: center;
-  padding-top: 40%;
-}
-
-p {
-  font-size: 1rem;
-}
-
 hr {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
+
+// h2 {
+//   font-size: 2.5rem;
+//   font-weight: 300;
+//   letter-spacing: 5px;
+//   word-spacing: 3px;
+//   text-align: center;
+//   padding-top: 40%;
+// }
+

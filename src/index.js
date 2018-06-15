@@ -18,9 +18,7 @@ ReactDOM.render((
 
 
 
-
-
-// 1. Build a react-redux app that has two routes, the main / route, and a /cats route.  
+// 1. Build a react-redux app that has two routes, the main / route, and a /cats route. 
 // 2. The user should always be able to navigate to either route from the ui.
 // 3. The cats route will load json data from "https://catrescue.herokuapp.com/petfinder/stpetersburg".  
 
