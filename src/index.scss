@@ -40,10 +40,15 @@ body {
   float: left;
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  grid-gap: 10px;
-  height: 600px;
-  // width: 10%;
-  // outline: none;
+  // grid-template-rows: auto;
+  grid-gap: 20px;
+  overflow: hidden;
+  
+  & .card-img {
+    width: 100%;
+    margin: 10px;
+    // height: 400px;
+  }
 
   & h3 {
     font-size: 1.3rem;
@@ -52,6 +57,7 @@ body {
     letter-spacing: 2px;
   }
 }
+
 
 .navigation {
   font-size: 25px;

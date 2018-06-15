@@ -10,7 +10,7 @@ class App extends React.Component {
       <div id="root">
         <header className="header">
           <img src="./asset/cat2offWHT2.png" alt="cat" className="cat-img" />
-          <h1 className="header-text">Awesome Cat</h1>
+          <h1 className="header-text">Awesome Cats</h1>
           <nav className="navigation">
             <Link to="/" className="home">Home</Link>
             <Link to="/cats" className="cats">Cats</Link>
