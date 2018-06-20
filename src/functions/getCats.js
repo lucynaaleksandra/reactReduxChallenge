@@ -1,4 +1,5 @@
 import React from 'react'
+import { setSpinning } from './setSpinning'
 
 export default function getCats() {
   return (dispatch) => {
@@ -9,15 +10,16 @@ export default function getCats() {
     fetch(`https://catrescue.herokuapp.com/petfinder/stpetersburg`)
       .then(response => {
         if (response.ok) {
-          return response.json()
+          return response.json() 
         }
-        throw new Error("Request failed")
+        throw new Error("Request failed") 
       })
       .then(data => {
         dispatch({
           type: "GOT_CATS_LISTING",
           data: data,
         })
+        dispatch(setSpinning(false))
       })
       .catch(err => console.log(err))
   }

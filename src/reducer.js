@@ -1,7 +1,8 @@
 export default function reducer(state = {
   catsLoaded: false,
   data: [],
-  loading: true,
+  // loading: false,
+  isSpinning: true, 
 }, action) {
   switch (action.type) {
     case "GET_CATS_LISTING":
@@ -17,7 +18,12 @@ export default function reducer(state = {
     case "CATS_LOADER": 
       return {
         ...state, 
-        loading: true,
+        // loading: true, 
+      }
+    case "IS_SPINNING": 
+      return {
+        ...state, 
+        isSpinning: action.isSpinning,
       }
     default:
       return state

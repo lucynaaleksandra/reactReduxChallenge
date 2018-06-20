@@ -1,7 +1,8 @@
 import React from "react"
-import Cats from './cats'
-import Home from './home'
+import Cats from './components/cats'
+import Home from './components/home'
 import { Route, Link } from 'react-router-dom'
+import Spinner from './components/spinner'
 
 class App extends React.Component {
 
@@ -17,6 +18,7 @@ class App extends React.Component {
           </nav>
         </header>
         <hr />
+        <Spinner />
         <div>
           <Route path="/" component={Home} exact={true} />
           <Route path="/cats" component={Cats} />

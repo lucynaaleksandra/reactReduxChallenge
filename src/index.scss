@@ -47,7 +47,6 @@ body {
   & .card-img {
     width: 100%;
     margin: 10px;
-    // height: 400px;
   }
 
   & h3 {
@@ -57,7 +56,6 @@ body {
     letter-spacing: 2px;
   }
 }
-
 
 .navigation {
   font-size: 25px;
@@ -91,12 +89,20 @@ hr {
   margin-bottom: 30px;
 }
 
-// h2 {
-//   font-size: 2.5rem;
-//   font-weight: 300;
-//   letter-spacing: 5px;
-//   word-spacing: 3px;
-//   text-align: center;
-//   padding-top: 40%;
-// }
+h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 10px;
+  word-spacing: 8px;
+  text-align: center;
+  padding-top: 30%;
+  opacity: 0.9;
+}
 
+.spinner {
+  display: block;
+}
+
+.spinner.spinning {
+  display: none;
+}

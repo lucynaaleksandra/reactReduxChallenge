@@ -21,6 +21,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^1.2.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-spinners": "^0.3.2",
