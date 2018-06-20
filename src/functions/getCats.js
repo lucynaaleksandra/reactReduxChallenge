@@ -1,5 +1,5 @@
 import React from 'react'
-import { setSpinning } from './setSpinning'
+import { setSpinning } from '../spinner/setSpinning'
 
 export default function getCats() {
   return (dispatch) => {

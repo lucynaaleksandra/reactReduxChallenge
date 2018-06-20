@@ -1,7 +1,8 @@
+import { setSpinning } from './spinner/setSpinning'
+
 export default function reducer(state = {
   catsLoaded: false,
   data: [],
-  // loading: false,
   isSpinning: true, 
 }, action) {
   switch (action.type) {
@@ -18,12 +19,11 @@ export default function reducer(state = {
     case "CATS_LOADER": 
       return {
         ...state, 
-        // loading: true, 
       }
     case "IS_SPINNING": 
       return {
         ...state, 
-        isSpinning: action.isSpinning,
+        isSpinning: action.isSpinning, 
       }
     default:
       return state

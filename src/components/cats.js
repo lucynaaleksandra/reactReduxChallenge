@@ -6,8 +6,7 @@ import PropTypes from 'prop-types'
 
 import reducer from '../reducer'
 import getCats from '../functions/getCats'
-// import Spinner from './spinner'
-import { setSpinning } from '../functions/setSpinning'
+import { setSpinning } from '../spinner/setSpinning'
 
 
 class Cats extends React.Component {
@@ -47,7 +46,6 @@ class Cats extends React.Component {
       <div>
         <div className="catsData">
           {catsData}
-          {/* <Spinner /> */}
         </div>
       </div >
     )
@@ -57,6 +55,5 @@ class Cats extends React.Component {
 export default connect(state => ({
   ...state,
 }), {
-    setSpinning, 
     getCats,
   })(Cats)

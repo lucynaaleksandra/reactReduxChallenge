@@ -2,10 +2,9 @@ import React from "react"
 import Cats from './components/cats'
 import Home from './components/home'
 import { Route, Link } from 'react-router-dom'
-import Spinner from './components/spinner'
+import Spinner from './spinner/spinner'
 
 class App extends React.Component {
-
   render() {
     return (
       <div id="root">

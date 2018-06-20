@@ -6,4 +6,4 @@ function setSpinning(spinning) {
     })
   }
 }
-export {setSpinning }
+export { setSpinning }
