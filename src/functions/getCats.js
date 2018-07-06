@@ -1,4 +1,3 @@
-import React from 'react'
 import { setSpinning } from '../spinner/setSpinning'
 
 export default function getCats() {

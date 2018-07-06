@@ -1,5 +1,3 @@
-import { setSpinning } from './spinner/setSpinning'
-
 export default function reducer(state = {
   catsLoaded: false,
   data: [],

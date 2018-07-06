@@ -100,11 +100,11 @@ h2 {
 }
 
 .spinner {
-  display: block;
-  text-align: center;
+  display: none;
 }
 
 .spinner.spinning {
-  display: none;
+  display: block;
+  text-align: center;
 }
 

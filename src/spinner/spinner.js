@@ -10,7 +10,11 @@ const styles = theme => ({
 })
 
 function Spinner(props) {
-  const { classes, isSpinning } = props
+  const { 
+    classes, 
+    isSpinning 
+  } = props
+  
   return (
     <span className={isSpinning ? "spinner spinning" : "spinner"}>
       <CircularProgress className={classes.progress} size={50} />

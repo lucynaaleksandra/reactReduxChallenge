@@ -1,10 +1,8 @@
 import '../index.scss'
 import React from "react"
 import { connect } from 'react-redux'
-import { FadeLoader } from 'react-spinners';
 import PropTypes from 'prop-types'
 
-import reducer from '../reducer'
 import getCats from '../functions/getCats'
 import { setSpinning } from '../spinner/setSpinning'
 
@@ -24,7 +22,6 @@ class Cats extends React.Component {
 
   render() {
     let {
-      getCats,
       data,
     } = this.props
 
@@ -32,7 +29,7 @@ class Cats extends React.Component {
       return <div>Loading</div>
     }
 
-    let catsData = data.map(cat => { 
+    let catsData = data.map(cat => {
       return (
         <div key={cat.id} className="cats-data">
           <img className="card-img" src={`${cat.photos[0]}`} />
@@ -41,6 +38,15 @@ class Cats extends React.Component {
         </div>
       )
     })
+
+    // if(!data.photos) {
+    //   data.name && data.description
+    // } else if(!data.name) {
+    //   data.photos && data.description
+    // } else if (!data.description) {
+    //   data.name && data.photos
+    // } data 
+
 
     return (
       <div>
@@ -55,5 +61,6 @@ class Cats extends React.Component {
 export default connect(state => ({
   ...state,
 }), {
+    setSpinning,
     getCats,
   })(Cats)
