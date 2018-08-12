@@ -11,7 +11,7 @@ export default class Cat extends React.Component {
     let {
       cat
     } = this.props
-    
+
     let {
       selected = false,
     } = this.state
@@ -42,5 +42,4 @@ export default class Cat extends React.Component {
       selected: selected ? false : true,
     })
   }
-
 }
