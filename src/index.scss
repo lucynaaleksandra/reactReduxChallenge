@@ -43,18 +43,6 @@ body {
   // grid-template-rows: auto;
   grid-gap: 20px;
   overflow: hidden;
-  
-  & .card-img {
-    width: 100%;
-    margin: 10px;
-  }
-
-  & h3 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
 }
 
 .navigation {
@@ -108,3 +96,29 @@ h2 {
   text-align: center;
 }
 
+.selected {
+  transition: transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s; 
+  opacity: 0.6;
+  color: #836618;
+}
+
+.cr-cat {
+  background-color: rgba(0,0,0,0.5);
+
+  .cr-cat__img {
+    width: 100%;
+    margin: 10px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &.cr-cat--selected {
+    background-color: rgba(0,0,0,1);
+  }
+}
